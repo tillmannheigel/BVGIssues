@@ -37,7 +37,7 @@ public class BVGJSONParserTest {
     @Test
     public void testJSONParserReturnsAnEmptyIssueForAnEmptyString() {
         Issue parsedIssue = parser.parseIssue("");
-        assertEquals(parsedIssue, Issue.builder().build());
+        assertEquals(Issue.builder().build(), parsedIssue);
     }
 
     @Test
@@ -47,7 +47,7 @@ public class BVGJSONParserTest {
         Issue testIssue = Issue.builder()
                 .id("29603")
                 .build();
-        assertEquals(parsedIssue, testIssue);
+        assertEquals(testIssue, parsedIssue);
     }
 
     @Test
@@ -93,6 +93,6 @@ public class BVGJSONParserTest {
                 .details(testDetails)
                 .build();
 
-        assertEquals(parsedIssue, testIssue);
+        assertEquals(testIssue, parsedIssue);
     }
 }
