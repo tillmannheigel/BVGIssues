@@ -40,7 +40,7 @@
         </activity>
 
         <service
-            android:name=".services.JSONCrawler"
+            android:name=".services.CrawlerService"
             android:enabled="true"
             android:exported="true"></service>
     </application>
